@@ -1,177 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+$(document).ready(function() {
+  var count = 0;
+  var chatCount = 0;
+  var popCount = 0;
+  var images = [
+      "image/chpt1-1.jpg",
+      "image/chpt1-2.png",
+      "image/chpt1-3.png",
+      "image/chpt1-4.png",
+      "image/chpt1-5.png",
+  ];
+  var imageIndex = 0;
 
-    <title>被蛛网缠住的幼蝶——儿童网络猥亵的现状、原因与保护</title>
+  var chats = $('.chpt1-chat');
+  var pops = $('.chpt1-pop');
 
-    <!--main css-->
-    <link rel="stylesheet" href="main-style.css" />
-
-    <!--css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-
-      <!--CHPT1-->
-      <div class="chpt1-container" id="change-trigger">
-        <div class="chpt1-chat">
-          <p class="chpt1-text">
-            陌生人：你好啊，我看到你的视频，你唱歌真的好好听啊，以后可以多发一些视频吗？
-          </p><div class="chpt1-chat">
-          <p class="chpt1-text">
-            林蕾：谢谢你，很少有人说我唱歌好听的，但是我要趁我爸妈不在家时才能发。
-          </p></div>
-        </div>
-        <div class="chpt1-pop">
-          <p class="chpt1-pop-text">
-            之后，林蕾的每个视频都被这个人点赞，林蕾渐渐感到了一股被需要的满足感。
-          </p>
-        </div>
-        <div class="chpt1-pic" style="width:100%;height:100%">
-          <img src="image/chpt1-1.jpg" class="wow img-responsive" />
-        </div>
-        <div class="chpt1-chat">
-          <p>
-            陌生人：你视频里怎么都戴着口罩啊，我想看看你不戴口罩的样子，可以吗?我也给你发张我的。
-          </p>
-          <p>林蕾：啊，那你别嫌我不好看啊。</p>
-        </div>
-        <div class="chpt1-pop">
-          <p>
-            见对方发来一张帅气的自拍，林蕾鼓起勇气，发了一张自己比较满意的照片过去。之后对方经常要求林蕾发照片，林蕾都同意了。
-          </p>
-        </div>
-        <div class="chpt1-pic">
-          <img src="image/chpt1-2.png" class="wow img-responsive" />
-        </div>
-        <div class="chpt1-chat">
-          <p>陌生人：我们之后多用语音交流吧，我恨不得听你声音睡觉。</p>
-          <p>林蕾：那你可别嫌我嗓音粗啊。</p>
-        </div>
-        <div class="chpt1-pop">
-          <p>此后，林蕾和陌生人的交流内容逐渐私密，露骨的话题也越来越多。</p>
-        </div>
-        <div class="chpt1-pic">
-          <img src="image/chpt1-3.png" class="wow img-responsive" />
-        </div>
-        <div class="chpt1-chat">
-          <p>林蕾：有什么话是不能用文字或语音说呢？</p>
-          <p>陌生人：可是宝贝~我真的好想和你打视频啊。</p>
-        </div>
-        <div class="chpt1-pop">
-          <p>
-            出于信任与一种独特的压力的迫使，林蕾犹豫再三，最终接受了视频邀请......
-          </p>
-        </div>
-        <div class="chpt1-pic">
-          <img src="image/chpt1-4.png" class="wow img-responsive" />
-        </div>
-        <div class="chpt1-pop">
-          <p>
-            想不到，视频里出现的是一个全身裸露的中年男子，同时林蕾收到了对方发出的大量淫秽视频和文字。
-          </p>
-          <p>林蕾立刻挂断了视频。</p>
-          <p>未待拉黑对方，中年男子就对林蕾进行了疯狂的辱骂，内容不堪入目……</p>
-          <p>林蕾受到强烈的精神冲击……</p>
-        </div>
-        <div class="chpt1-pic">
-          <img src="image/chpt1-5.png" class="wow img-responsive" />
-        </div></div>
-      <!--HOME-->
-
-      <!--CHPT2&&3-->
-
-      <!--CHPT4-->
-      <div class="all-container">
-      <div class="chpt4-container">
-        <h2>网络潘多拉：儿童网络猥亵的原因探析</h2>
-        <div class="chpt4-content">
-          <div class="chpt4-text">
-            <p>
-              儿童网络猥亵由于犯罪的主体与受害者的特殊性，表现出复杂的原因。
-              犯罪分子年龄远大于儿童年龄，二者的差距是造成网络猥亵形成的第一个原因。在于网络猥亵的过程中，最为关键的问题在于儿童与犯罪分子、平台等的权力关系的不对等。这既是未成年人无力抵抗的原因，也是未成年人需要受到各方面保护的原因。
-              儿童与犯罪分子的的年龄差造成了认知的不对等：
-            </p>
-          </div>
-          <div class="chpt4-pop-left">
-            <div class="chpt4-popchan" style="background: #f5e4ac">
-              <p class="chpt4-pop-title">点击展开自述</p>
-            </div>
-            <p class="chpt4-pop-text">
-              自述一：
-              小学四五年级12，13年大概刚接触到qq，那时候经常会有陌生人加好友，然后对面经常一通过就会发他们生殖器的图片过来，然后问大不大什么的，但是那时候也还小吧，对性知识这块没有任何了解，当时属于那种被吓到吧。有的是一通过好友就会发图片，因为那时候都会认真填自己资料9岁10岁的，然后那些通常知道是小孩子都会更兴奋会连续不断的发图片过来。
-            </p>
-          </div>
-          <div class="chpt4-text">
-            <p>
-              受害者由于年龄小，缺乏法律与维权意识，相比于成年人可以自主诉诸于法律，造成了诉诸法律的困难。
-            </p>
-          </div>
-          <div class="chpt4-pop-right">
-            <div class="chpt4-popchan" style="background: #f0b476">
-              <p class="chpt4-pop-title">点击展开自述</p>
-            </div>
-            <p class="chpt4-pop-text">
-              自述二：
-              反正小时候没有什么意识吧，这些事基本都是我上了大学之后，接触的东西多了，眼界也更开阔，价值观也提升之后逐渐想明白的，那个人应该是恋童癖，当时那些应该算是被隔空猥亵。不过，当初的我也不足以支持我想到这些原来是伤害，不足以支持我有勇气把这些东西说出来吧。现在偶尔想到这些事情会觉得有些恶心吧，也后悔当时没能报警，没能把证据保留下来。
-            </p>
-          </div>
-          <div class="chpt4-text">
-            <p>
-              儿童不敢或者没有对家长、老师、同学诉说自身的遭遇，同样是家长对于儿童的网络使用的监管不严格，也造成了儿童保护自我的困难。
-            </p>
-          </div>
-          <div class="chpt4-pop-left">
-            <div class="chpt4-popchan" style="background: #bcc598">
-              <p class="chpt4-pop-title">点击展开自述</p>
-            </div>
-            <p class="chpt4-pop-text">自述三：对家长老师朋友，我都没有说过。</p>
-          </div>
-          <div class="chpt4-text">
-            <p>
-              儿童性教育的缺失也不能让儿童早早的建立起性意识，于是乎，网络猥亵的施暴者，就成了儿童形成性的偏见的罪魁祸首，梦子便是最好的证明。
-            </p>
-          </div>
-          <div class="chpt4-pop-right">
-            <div class="chpt4-popchan" style="background: #e2a185">
-              <p class="chpt4-pop-title">点击展开自述</p>
-            </div>
-            <p class="chpt4-pop-text">
-              自述四：
-              我大概是四年级的时候，有大把自己玩电脑的时间，那时候毫无性知识，不太有防备意识，也不感觉外面很多坏人需要我防备，通过
-              QQ，不记得是什么方式，有一个陌生男性加我好友，邀请视频，迷迷糊糊接通，我很好奇问他那是什么，我说像长条的气球，他说我好可爱。多年以后突然回想起来，才意识到那时候看到的是男性生殖器。
-            </p>
-          </div>
-          <div class="chpt4-text">
-            <p>
-              形成儿童网络猥亵的原因还有很多。然而，现实中，未成年人的五大保护（家庭保护、学校保护、政府保护、网络保护、社会保护）没有想象中的那样良好。当这五大保护失灵，只有依赖司法保护——这也代表着某种隐喻——儿童已然遭受严重的侵害。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SCRIPTS -->
-    <script src="js/jquery.js"></script>
-
-    <script src="main-script.js"></script>
-    <!--other scripts-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
--->
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.parallax.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
-</html>
+  $('.chpt1-container').on('click', function() {
+      // 切换背景图并隐藏元素
+      if(count % 5 == 4) {
+          $('.chpt1-container').css('background-image', 'url(' + images[imageIndex] + ')');
+          chats.slice(0, chatCount).hide();
+          pops.slice(0, popCount).hide();
+          imageIndex += 1;
+      }
+      // 显示chpt1-chat
+      else if(count % 5 < 2) {
+          chats.eq(chatCount).show();
+          chatCount += 1;
+      }
+      // 显示chpt1-pop
+      else if(count % 5 == 2) {
+          pops.eq(popCount).show();
+          popCount += 1;
+      }
+      count += 1;
+  });
+});

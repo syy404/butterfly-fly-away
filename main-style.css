@@ -278,7 +278,7 @@ chpt2-img {
   width: 680px;
   height: 430px;
   left: 328px;
-  top: 226px;
+  top: 150px;
 }
 .chpt1-chat {
   display: none;
@@ -310,7 +310,7 @@ chpt2-img {
   position: absolute;
   width: 672px;
   left: 332px;
-  top: 600px;
+  top: 450px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 20px;

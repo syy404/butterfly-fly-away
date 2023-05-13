@@ -20,16 +20,18 @@ $(document).ready(function() {
           $('.chpt1-container').css('background-image', 'url(' + images[imageIndex] + ')');
           chats.slice(0, chatCount).hide();
           pops.slice(0, popCount).hide();
-          imageIndex += 1;
+          if (imageIndex < images.length - 1) {  // 检查是否已经是最后一张图片
+            imageIndex += 1;
+          }
       }
       // 显示chpt1-chat
       else if(count % 5 < 2) {
-          chats.eq(chatCount).show();
+          chats.eq(chatCount).fadeIn();  // 添加浮现动画
           chatCount += 1;
       }
       // 显示chpt1-pop
       else if(count % 5 == 2) {
-          pops.eq(popCount).show();
+          pops.eq(popCount).fadeIn();  // 添加浮现动画
           popCount += 1;
       }
       count += 1;
