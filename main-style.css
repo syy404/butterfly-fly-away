@@ -1,7 +1,7 @@
 /*general*/
 @font-face {
   font-family: "sucaijishikangkangti";
-  src: url(font/chpt4-pop.ttf);
+  src: url(font/chpt3-pop.ttf);
 }
 @font-face {
   font-family: "Alibaba-b";
@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 150px;
+  padding: 0px 200px;
   gap: 37px;
   position: relative;
   background: #f9f5f3;
@@ -144,7 +144,7 @@ a:focus {
 }
 .catalog-kid {
   width: 40px;
-  height: auto;
+  height: 40px;
   margin: 15px;
   padding: 10px 20px 10px 20px;
   border-radius: 4px;
@@ -167,7 +167,7 @@ a:focus {
   height: auto;
   transition: all 0.2s ease-in;
 }
-.catalog-kid p {
+.catalog-kid a {
   opacity: 0;
   transition: opacity 0.2s ease-in;
   overflow: hidden;
@@ -175,7 +175,7 @@ a:focus {
   flex-grow: 0;
   margin-bottom: 0  ;
 }
-.catalog-kid:hover p {
+.catalog-kid:hover a {
   opacity: 1;
 }
 /* CHPT2&&3*/
@@ -286,7 +286,8 @@ chpt2-img {
 }
 /* CHPT0 */
 .chpt0-container {
-  width: 1335px;
+  position: relative;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -298,14 +299,15 @@ chpt2-img {
 .chpt0-chatbox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   padding: 37px 40px;
   position: absolute;
   width: 680px;
   height: 430px;
-  left: 328px;
-  top: 150px;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .chpt0-chat {
   display: none;
@@ -336,8 +338,9 @@ chpt2-img {
   gap: 10px;
   position: absolute;
   width: 672px;
-  left: 332px;
-  top: 450px;
+  top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -356,14 +359,14 @@ chpt2-img {
 }
 /*CHPT4*/
 
-.chpt4-content {
+.chpt3-content {
   display: flex;
   flex-direction: column;
   flex: none;
   align-self: stretch;
   flex-grow: 0;
 }
-.chpt4-text {
+.chpt3-text {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -372,7 +375,7 @@ chpt2-img {
   flex: none;
   flex-grow: 0;
 }
-.chpt4-pop-left {
+.chpt3-pop-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -382,7 +385,7 @@ chpt2-img {
   align-self: stretch;
   flex-grow: 0;
 }
-.chpt4-pop-right {
+.chpt3-pop-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -392,7 +395,7 @@ chpt2-img {
   align-self: stretch;
   flex-grow: 0;
 }
-.chpt4-popchan {
+.chpt3-popchan {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -402,7 +405,7 @@ chpt2-img {
   flex: none;
   flex-grow: 0;
 }
-.chpt4-pop-title {
+.chpt3-pop-title {
   font-family: "Alibaba-l";
   font-style: normal;
   font-weight: 400;
@@ -415,7 +418,7 @@ chpt2-img {
   flex-grow: 0;
   margin-bottom: 0px !important;
 }
-.chpt4-pop-text {
+.chpt3-pop-text {
   font-family: "sucaijishikangkangti";
   font-style: normal;
   font-weight: 400;
