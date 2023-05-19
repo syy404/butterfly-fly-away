@@ -3,20 +3,20 @@ $(document).ready(function () {
   var chatCount = 0;
   var popCount = 0;
   var images = [
-    "image/chpt1-1.jpg",
-    "image/chpt1-2.png",
-    "image/chpt1-3.png",
-    "image/chpt1-4.png",
-    "image/chpt1-5.png",
+    "image/chpt0-1.jpg",
+    "image/chpt0-2.png",
+    "image/chpt0-3.png",
+    "image/chpt0-4.png",
+    "image/chpt0-5.png",
   ];
   var imageIndex = 0;
 
-  var chats = $(".chpt1-chat");
-  var pops = $(".chpt1-pop");
+  var chats = $(".chpt0-chat");
+  var pops = $(".chpt0-pop");
 
-  $(".chpt1-container").on("click", function () {
+  $(".chpt0-container").on("click", function () {
     if (count % 5 == 4) {
-      $(".chpt1-container").css(
+      $(".chpt0-container").css(
         "background-image",
         "url(" + images[imageIndex] + ")"
       );
