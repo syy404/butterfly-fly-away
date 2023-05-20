@@ -33,5 +33,12 @@ $(document).ready(function () {
       popCount += 1;
     }
     count += 1;
+    if (chatCount >= chats.length && popCount >= pops.length) {
+      $(".container").css({
+        border: "1px solid black", // 你可以根据需要改变这个值
+        opacity: "1", // 使其显示
+        "z-index": "1", // 放在 chpt0-container 上面
+      });
+    }
   });
 });

@@ -1,6 +1,6 @@
 /*general*/
 @font-face {
-  font-family: "sucaijishikangkangti";
+  font-family: "chpt3-pop";
   src: url(font/chpt3-pop.ttf);
 }
 @font-face {
@@ -87,11 +87,11 @@ p {
   font-family: "FangSong";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 17px;
+  line-height: 30px;
   text-align: justify;
   letter-spacing: -0.005em;
-  color: #000000;
+  color: #464646;
   margin: 3px 0px;
   font-family: "FangSong";
 }
@@ -173,12 +173,109 @@ a:focus {
   overflow: hidden;
   flex: none;
   flex-grow: 0;
-  margin-bottom: 0  ;
+  margin-bottom: 0;
 }
 .catalog-kid:hover a {
   opacity: 1;
 }
+/* CHPT0&&HOME*/
+.chpt0-container {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("image/chpt0-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.chpt0-chatbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 37px 40px;
+  position: absolute;
+  width: 680px;
+  height: 430px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chpt0-chat {
+  display: none;
+  font-family: "Alibaba-l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
+  color: #ffffff;
+  flex: none;
+}
+.chpt0-text {
+  font-family: "Alibaba-l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: inherit;
+  text-align: justify;
+  color: #ffffff;
+}
+.chpt0-pop {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  position: absolute;
+  width: 672px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.chpt0-pop-text {
+  font-family: "Alibaba-r";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
+  color: #000000;
+}
+#change-trigger {
+  transition: background-image 0.3s ease;
+}
+#home {
+  background: url("../image/chpt1-5.png") 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+  position: relative;
+  margin: 82px 12px 0 12px;
+}
+.home-wrapper {
+  background: rgba(250, 250, 250, 0.8);
+  padding: 32px 12px;
+}
+
 /* CHPT2&&3*/
+
 .text-center {
   text-align: center;
 }
@@ -284,80 +381,8 @@ chpt2-img {
   line-height: 20px;
   color: #719382;
 }
-/* CHPT0 */
-.chpt0-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("image/chpt0-1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.chpt0-chatbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 37px 40px;
-  position: absolute;
-  width: 680px;
-  height: 430px;
-  top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.chpt0-chat {
-  display: none;
-  font-family: "Alibaba-l";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: justify;
-  color: #ffffff;
-  flex: none;
-}
-.chpt0-text {
-  font-family: "Alibaba-l";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: inherit;
-  text-align: justify;
-  color: #ffffff;
-}
-.chpt0-pop {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-  position: absolute;
-  width: 672px;
-  top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-.chpt0-pop-text {
-  font-family: "Alibaba-r";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: justify;
-  color: #000000;
-}
-#change-trigger {
-  transition: background-image 0.3s ease;
-}
-/*CHPT4*/
+
+/*CHPT3*/
 
 .chpt3-content {
   display: flex;
@@ -419,7 +444,7 @@ chpt2-img {
   margin-bottom: 0px !important;
 }
 .chpt3-pop-text {
-  font-family: "sucaijishikangkangti";
+  font-family: "chpt3-pop";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
