@@ -356,31 +356,6 @@ a:focus {
 chpt2-img {
   width: 600px;
 }
-#footer {
-  margin-top: 100px;
-  background-image: url("image/footer.png");
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-box {
-  width: 500px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.8);
-  word-wrap: break-word;
-  padding: 20px;
-  overflow: auto;
-}
-.footer-text {
-  font-weight: lighter;
-  line-height: 20px;
-  color: #719382;
-}
 
 /*CHPT3*/
 
@@ -431,7 +406,7 @@ chpt2-img {
   flex-grow: 0;
 }
 .chpt3-pop-title {
-  font-family: "Alibaba-l";
+  font-family: "chpt3-pop";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -455,4 +430,35 @@ chpt2-img {
   flex: none;
   flex-grow: 0;
   width: 500px;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 100px;
+  background-image: url("image/footer.png");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-box {
+  width: 700px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  padding: 20px;
+  overflow: auto;
+}
+.footer-text {
+  font-size: 12px;
+  text-align: center;
+  line-height: 5px;
+  line-height: 20px;
+  text-align: justify;
+  color: #719382;
 }
