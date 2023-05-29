@@ -10,9 +10,10 @@ $(document).ready(function () {
     "image/chpt0-5.png",
   ];
   var imageIndex = 0;
-
   var chats0 = $(".chpt0-chat");
   var pop0 = $(".chpt0-pop");
+  var typechan = $(".typechan"); //container
+  var typetext = $(".typetext"); //text
 
   $(".chpt0-container").on("click", function () {
     if (count % 5 == 4) {
@@ -34,10 +35,27 @@ $(document).ready(function () {
     }
     count += 1;
   });
+  //popchan is here!
+
   $(document).ready(function () {
     $(".chpt3-pop-text").hide();
     $(".chpt3-popchan").on("click", function () {
       $(this).siblings(".chpt3-pop-text").slideToggle();
     });
   });
+  //popclick is here!
+
+  $(document).ready(function () {
+    const typeme = typetext.split("");
+    let counter = 0;
+    function typetype() {
+      if (counter < typetext.length) {
+        typetext.innerHTML += typeme[counter++];
+        let timer = setTimeout(typetype, 200);
+        console.log(timer);
+      }
+    }
+    typetype();
+  });
+  
 });

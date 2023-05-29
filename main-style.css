@@ -133,6 +133,24 @@ a:focus {
   background-attachment: fixed !important;
   background-size: cover !important;
 }
+.kirakira {
+  color: #000000;
+  animation: blink 1s infinite;
+}
+.shortline::after {
+  content: "|";
+  color: darkgray;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* CATALOG */
 .catalog {
   position: fixed;
@@ -179,9 +197,35 @@ a:focus {
   opacity: 1;
 }
 /* CHPT0&&HOME*/
+.chpt0-mention {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  position: absolute;
+  width: 124px;
+  height: 66px;
+  left: 42px;
+  top: 313px;
+  border-radius: 4px;
+}
+.chpt0-mention-text p {
+  width: 112px;
+  height: 23px;
+  font-family: "chpt3-pop";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150.7%;
+  text-align: center;
+  letter-spacing: 0.085em;
+  color: #000000;
+}
 .chpt0-container {
   z-index: 1;
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -189,6 +233,10 @@ a:focus {
   background-image: url("image/chpt0-1.jpg");
   background-size: cover;
   background-position: center;
+}
+.chpt0-window {
+  width: 1423px;
+  height: 757px;
 }
 .chpt0-chatbox {
   display: flex;
