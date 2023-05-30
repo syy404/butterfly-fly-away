@@ -40,6 +40,7 @@ body {
   background: #f9f5f3;
   align-self: stretch;
 }
+
 html,
 body {
   width: 100%;
@@ -161,22 +162,36 @@ a:focus {
   z-index: 1000;
 }
 .catalog-kid {
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: auto;
   margin: 5px;
-  padding: 10px 20px 10px 20px;
+  padding: 8px 20px 6px 10px;
   border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
+.catalog-kid img{
+	width: 30px;
+	margin-right: 8px;
+}
+.catalog-num{
+	font-size: 20px;
+	color: #ffffff;
+	line-height: 32px;
+	margin-right: 8px;
+	letter-spacing: 2px;
+	font-family:"华文彩云";
+	font-weight: bold;
+	text-shadow: 1px 1px grey;
+}
 .catalog-text {
-  font-family: "Alibaba-l";
+  font-family: "Alibaba";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 27px;
+  line-height: 31px;
   text-align: justify;
   color: #FFFFFF;
 }
