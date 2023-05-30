@@ -73,10 +73,10 @@ h2 {
 }
 h3 {
   color: #d7b065;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 32px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 h4 {
@@ -85,7 +85,7 @@ h4 {
   font-weight: 400;
 }
 p {
-  font-family: "FangSong";
+  font-family: "仿宋";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -345,6 +345,9 @@ a:focus {
 	position: relative;
 	z-index: 2;
 }
+.chpt1-1{
+	margin-top: 30px;
+}
 .chpt1-girl{
 	position: absolute;
 	z-index: -1;
@@ -355,8 +358,8 @@ a:focus {
 	width: 600px;
 	opacity: 0.5;
 }
-.text-center {
-  text-align: center;
+#mogui{
+	font-size: 26px;
 }
 .bold-red {
   font-weight: bold;
