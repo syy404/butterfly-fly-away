@@ -94,7 +94,8 @@ p {
   letter-spacing: -0.005em;
   color: #464646;
   margin: 3px 0px;
-  font-family: "FangSong";
+	margin-top: 10px;
+	text-indent: 2em;
 }
 strong,
 span {
@@ -336,9 +337,24 @@ a:focus {
   background: rgba(250, 250, 250, 0.8);
   padding: 32px 12px;
 }
+/* CHPT-TITLE */
 
 /* CHPT2&&3*/
-
+.chpt1-text{
+	padding: 0 50px;
+	position: relative;
+	z-index: 2;
+}
+.chpt1-girl{
+	position: absolute;
+	z-index: -1;
+}
+.chpt1-girl img{
+	display: block;
+	margin: 0 auto;
+	width: 600px;
+	opacity: 0.5;
+}
 .text-center {
   text-align: center;
 }
