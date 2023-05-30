@@ -24,7 +24,7 @@
   src: url(font/Alibaba-PuHuiTi-Light.otf);
 }
 body {
-  background: #f4f4f4;
+  background: #f9f5f3;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -113,7 +113,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #000000;
+  color: #ffffff;
   outline: none;
 }
 * {
@@ -163,7 +163,7 @@ a:focus {
 .catalog-kid {
   width: 40px;
   height: 40px;
-  margin: 15px;
+  margin: 5px;
   padding: 10px 20px 10px 20px;
   border-radius: 4px;
   overflow: hidden;
@@ -172,13 +172,13 @@ a:focus {
   align-items: flex-start;
 }
 .catalog-text {
-  font-family: "Alibaba-r";
+  font-family: "Alibaba-l";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 27px;
   text-align: justify;
-  color: #000000;
+  color: #FFFFFF;
 }
 .catalog-kid:hover {
   width: auto;
