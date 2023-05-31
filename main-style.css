@@ -353,11 +353,13 @@ a:focus {
 .chpt1-girl{
 	position: absolute;
 	z-index: -1;
+	width: 800px;
+	margin: 0 auto;
 }
 .chpt1-girl img{
 	display: block;
-	margin: 0 auto;
 	width: 600px;
+	margin: 0 auto;
 	opacity: 0.5;
 }
 #mogui{
@@ -417,9 +419,10 @@ a:focus {
     font-weight: 700;
 	text-align: center;
 	color: #a4856f;
-	text-shadow: 2px 2px 1px rgba(250, 232, 229, 0.8);
+	text-shadow: 2px 2px rgba(250, 232, 229, 0.8);
 
 }
+/*
 .chpt3-2 {
   background-image: url("image/cases.png");
   background-repeat: no-repeat;
@@ -429,6 +432,7 @@ a:focus {
   background-attachment: fixed;
   height: auto;
 }
+*/
 .chpt3-2kuang {
   margin: 300px auto;
   width: 500px;
