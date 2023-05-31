@@ -376,13 +376,22 @@ a:focus {
 /*	font-weight: bold;*/
 }
 .bold-large{
-	font-size: 20px;
-	color: darksalmon;
+/*	font-size: 20px;*/
+	color: #c96865;
 	font-weight: bold;
+}
+.bold{
+	font-weight: bold;
+	color: #a4856f;
 }
 .bold-red {
   font-weight: bold;
   color: #824947;
+}
+.delete{
+	text-decoration: line-through;
+	color: #a4856f;
+	font-weight: bold;
 }
 .flourish {
   margin: 80px auto 80px; /*width: 600px;*/
@@ -429,6 +438,14 @@ a:focus {
 	color: #a4856f;
 	text-shadow: 2px 2px rgba(250, 232, 229, 0.8);
 
+}
+.data-source{
+	font-family:"阿里巴巴普惠体 L";
+	font-size: 13px;
+	margin-left: 100px;
+/*	margin-top: 20px;*/
+	color: #a4856f;
+	letter-spacing: 1px;
 }
 /*
 .chpt3-2 {
@@ -544,10 +561,12 @@ a:focus {
 .chpt4-text{
 	position: relative;
 	text-align: center;
+	margin-top: 50px;
 }
 .chpt4-text p{
 	text-align: center;
 	text-indent: 0;
+	font-style: italic;
 }
 .gif {
   z-index: 0;
