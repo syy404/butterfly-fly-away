@@ -47,7 +47,15 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.chpt-title{
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+.chpt-title img{
+	width: 800px;
+	margin: 120px auto 0;
+}
 
 h1,
 h2,
