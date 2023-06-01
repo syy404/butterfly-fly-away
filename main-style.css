@@ -367,31 +367,37 @@ a:focus {
 .chpt1-girl img{
 	display: block;
 	width: 600px;
-	margin: 0 auto;
+	margin: 0 470px;
 	opacity: 0.5;
 }
 #mogui{
 	font-size: 26px;
-	color:#000000;
+	color:#56483D;
+	text-shadow: 1px 1px 1px #d2bbbb;
 /*	font-weight: bold;*/
 }
 .bold-large{
-/*	font-size: 20px;*/
-	color: #c96865;
+	font-size: 18px;
+	color: #bd7466;
 	font-weight: bold;
+	text-shadow: 1px 1px 1px #d2bbbb;
 }
 .bold{
 	font-weight: bold;
-	color: #a4856f;
+	color: #97866d;
+	text-shadow: 1px 1px 1px #d2bbbb;
 }
 .bold-red {
   font-weight: bold;
-  color: #824947;
+	font-size: 20px;
+  color: #ac645c;
+	text-shadow: 2px 2px 1px #f0e8d9;
 }
 .delete{
 	text-decoration: line-through;
 	color: #a4856f;
 	font-weight: bold;
+	text-shadow: 1px 1px 1px #d2bbbb;
 }
 .flourish {
   margin: 80px auto 80px; /*width: 600px;*/
@@ -482,6 +488,11 @@ a:focus {
 	margin: 80px auto 0;
 	width: 600px;
 /*	height: 600px;*/
+}
+.bold-orange{
+	font-size: 18px;
+	color: #da9261;
+	font-weight: bold;
 }
 /*CHPT3*/
 
