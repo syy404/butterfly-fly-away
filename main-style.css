@@ -194,14 +194,14 @@ a:focus {
 	letter-spacing: 2px;
 	font-family:"华文彩云";
 	font-weight: bold;
-	text-shadow: 1px 1px grey;
+	text-shadow: 1px 1px #bbbbbb;
 	display: inline-block;
 }
 .catalog-text {
   font-family: "Alibaba";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 31px;
   text-align: justify;
   color: #FFFFFF;
@@ -480,8 +480,8 @@ a:focus {
 }
 .explanation {
   margin-top: 10px;
-  font-size: 14px;
-  color: #986359;
+  font-size: 15px;
+  color: #ba977d;
 }
 
 .chpt2-4 {
