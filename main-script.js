@@ -23,7 +23,7 @@ $(document).ready(function () {
   }, 5000);
 
   //typetext is here!
- 
+
   //popchanv2.0 is here!
   chat0.hide();
   $(".chpt0-container").on("click", function () {
@@ -135,6 +135,18 @@ $(document).ready(function () {
       },
       1000
     );
-    //kuang-flow is here!
+  });
+  $(window).scroll(function () {
+    var scrollPosition = $(this).scrollTop();
+    var flrhOffset = $(".chpt2-2-container").offset().top;
+    var kuangOffset =
+      $(".kuang-enhance").offset().top + $(".kuang-enhance").height()-700;
+
+    if (scrollPosition >= flrhOffset && scrollPosition <= kuangOffset) {
+      $(".flrh-enhance").fadeIn();
+      $(".flrh-enhance").css({ position: "fixed", top: "20%", left: "0" });
+    } else {
+      $(".flrh-enhance").fadeOut(500);
+    }
   });
 });

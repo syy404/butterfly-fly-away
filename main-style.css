@@ -250,8 +250,8 @@ a:focus {
 }
 .chpt0-container {
   z-index: 1;
-  width: auto;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -561,8 +561,7 @@ chpt0-frame {
   scrollbar-width: none;
   position: relative;
   overflow: auto;
-  height: 100vh;
-  background-image:url("image");
+  height: 180vh;
 }
 .chpt2-3-container::-webkit-scrollbar {
   display: none;
@@ -572,12 +571,12 @@ chpt0-frame {
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 .kuang-enhance {
   position: sticky;
-  z-index: 3;
+  z-index: 1000;
   top:0;
 }
 /*CHPT3*/
@@ -699,7 +698,7 @@ chpt0-frame {
 #footer {
   margin-top: 100px;
   background-image: url("image/footer.png");
-  width: 100%;
+  width: auto;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
