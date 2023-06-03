@@ -209,19 +209,19 @@ a:hover, a:active, a:focus {
 /* CHPT0&&HOME*/
 .chpt0-mention {
   z-index: 1000;
+  margin:0px;
   display: flex;
-  flex-direction: row;
-  padding: 5px;
-  gap: 10px;
-  position: relative;
-  width: 124px;
-  height: 66px;
-  right: 530px;
-  top: -20px;
+  gap: 5px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 2%;
+  top: 40%;
   border-radius: 4px;
 }
 .chpt0-mention-text p {
-  width: 112px;
+  margin:0px;
+  width: auto;
   height: 23px;
   font-family: "chpt3-pop";
   font-style: normal;
