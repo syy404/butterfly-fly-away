@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  //bcgchanger is here!
   var imageIndex = 0;
   var images = [
     "image/chpt0-1.jpg",
@@ -13,6 +12,7 @@ $(document).ready(function () {
   var count = 0;
   var chats = $(".chpt0-chat");
   var road = $(window).scrollTop();
+
   //bcgchanger is here!
   setInterval(function () {
     $(".chpt0-container").css(
@@ -21,27 +21,11 @@ $(document).ready(function () {
     );
     imageIndex = (imageIndex + 1) % images.length;
   }, 5000);
+
   //typetext is here!
-  var currentChat = 0;
-  function typeWriter(chat, text, index) {
-    if (index < text.length) {
-      chat.append(text.charAt(index));
-      setTimeout(function () {
-        typeWriter(chat, text, index + 1);
-      }, 50);
-    } else if (currentChat < chats.length - 1) {
-      currentChat++;
-      startTypeWriter();
-    }
-  }
-  function startTypeWriter() {
-    var chat = $(chats[currentChat]);
-    var text = chat.find(".typetext").text();
-    chat.show();
-    typeWriter(chat, text, 0);
-  }
-  startTypeWriter();
+ 
   //popchanv2.0 is here!
+  chat0.hide();
   $(".chpt0-container").on("click", function () {
     switch (count) {
       case 0:
@@ -101,16 +85,56 @@ $(document).ready(function () {
     }
     count++;
   });
-  //popclick is here!
- /* $(".chpt3-pop-text").hide();
-  $(".chpt3-popchan").on("click", function () {
-    $(this).siblings(".chpt3-pop-text").slideToggle();
-  });*/
-  //scroll fifth is here!
-  $("chpt1-girl").hide();
-  window.addEventListener("scroll", function () {
-    if (road >= $("chpt1-girl").offset.top() + 30) {
-      $("chpt1-girl").fadeIn();
+
+  //scroll fifth for girl is here!
+  $(".chpt1-girl").hide();
+  $(window).scroll(function () {
+    var girlTop = $(".chpt1-girl").offset().top;
+    var windowTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (
+      windowTop + windowHeight > girlTop &&
+      windowTop < girlTop + $(".chpt1-girl").height()
+    ) {
+      $(".chpt1-girl").fadeIn();
+    } else {
+      $(".chpt1-girl").fadeOut();
     }
+  });
+
+  // chpt3-pop-voice is here!
+  $(".chpt3-pop-left .chpt3-voice img").click(function () {
+    var audio = $(this).siblings("audio")[0];
+    if (audio.paused) {
+      audio.play();
+      $(this).attr("src", "image/voiceon.png");
+    } else {
+      audio.pause();
+      $(this).attr("src", "image/voiceoff-1.png");
+    }
+  });
+
+  $(".chpt3-pop-right .chpt3-voice img").click(function () {
+    var audio = $(this).siblings("audio")[0];
+    if (audio.paused) {
+      audio.play();
+      $(this).attr("src", "image/voiceon-1.png");
+    } else {
+      audio.pause();
+      $(this).attr("src", "image/voiceoff.png");
+    }
+  });
+
+  //jumper is here!
+  $(".titlelink").click(function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top,
+      },
+      1000
+    );
+    //kuang-flow is here!
   });
 });
