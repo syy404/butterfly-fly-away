@@ -103,7 +103,7 @@ p {
   font-family: "type2";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 30px;
   text-align: justify;
   letter-spacing: -0.005em;
@@ -640,7 +640,7 @@ chpt0-frame {
   flex-direction: column;
   align-items: flex-start;
   margin: 10px 30px;
-  padding: 30px 30px;
+  padding: 20px 20px;
   gap: 10px;
   border-radius: 20px;
 }

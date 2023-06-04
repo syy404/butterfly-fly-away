@@ -136,17 +136,19 @@ $(document).ready(function () {
       1000
     );
   });
+
+  //the scrollV is here!
   $(window).scroll(function () {
     var scrollPosition = $(this).scrollTop();
     var flrhOffset = $(".chpt2-2-container").offset().top;
     var kuangOffset =
-      $(".kuang-enhance").offset().top + $(".kuang-enhance").height()-700;
+      $(".kuang-enhance").offset().top + $(".kuang-enhance").height();
 
-    if (scrollPosition >= flrhOffset && scrollPosition <= kuangOffset) {
+    if (scrollPosition - 700 >= flrhOffset && scrollPosition + 500 <= kuangOffset) {
       $(".flrh-enhance").fadeIn();
       $(".flrh-enhance").css({ position: "fixed", top: "20%", left: "0" });
     } else {
-      $(".flrh-enhance").fadeOut(500);
+      $(".flrh-enhance").fadeOut(100);
     }
   });
 });
