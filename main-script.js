@@ -1,4 +1,15 @@
+window.onload = function () {
+  var meetupbox = document.querySelector(".meetupbox");
+  if (meetupbox) {
+    meetupbox.style.display = "none";
+  }
+};
+
+// let start here!
 $(document).ready(function () {
+  $("audio").each(function () {
+    this.pause();
+  });
   var imageIndex = 0;
   var images = [
     "image/chpt0-1.jpg",
@@ -12,7 +23,7 @@ $(document).ready(function () {
   var count = 0;
   var chats = $(".chpt0-chat");
   var road = $(window).scrollTop();
-
+  $("body").addClass("no-scroll");
   //bcgchanger is here!
   setInterval(function () {
     $(".chpt0-container").css(
@@ -21,6 +32,7 @@ $(document).ready(function () {
     );
     imageIndex = (imageIndex + 1) % images.length;
   }, 5000);
+  $(window).scrollTop(0);
 
   //typetext is here!
 
@@ -128,12 +140,18 @@ $(document).ready(function () {
   //jumper is here!
   $(".titlelink").click(function (e) {
     e.preventDefault();
+    allowNavigation = true;
+    $("body").removeClass("no-scroll");
     var target = $(this).attr("href");
     $("html, body").animate(
       {
         scrollTop: $(target).offset().top,
       },
-      1000
+      1000,
+      function () {
+        // 当动画完成后，显示 .catalog
+        $(".catalog").fadeIn();
+      }
     );
   });
 
@@ -144,7 +162,10 @@ $(document).ready(function () {
     var kuangOffset =
       $(".kuang-enhance").offset().top + $(".kuang-enhance").height();
 
-    if (scrollPosition - 700 >= flrhOffset && scrollPosition + 500 <= kuangOffset) {
+    if (
+      scrollPosition - 700 >= flrhOffset &&
+      scrollPosition + 500 <= kuangOffset
+    ) {
       $(".flrh-enhance").fadeIn();
       $(".flrh-enhance").css({ position: "fixed", top: "20%", left: "0" });
     } else {

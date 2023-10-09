@@ -41,6 +41,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 .all-container {
   display: flex;
   flex-direction: column;
@@ -166,6 +170,7 @@ a:focus {
     opacity: 1;
   }
 }
+
 /* CATALOG */
 .catalog {
   position: fixed;
@@ -173,7 +178,8 @@ a:focus {
   left: 0;
   margin: 0;
   padding: 0;
-  z-index: 1000;
+  z-index: 10;
+  display: none;
 }
 .catalog-kid {
   width: 43px;
@@ -222,17 +228,93 @@ a:focus {
 .catalog-kid:hover a {
   opacity: 1;
 }
+
+/* LOADING */
+.meetupbox {
+  position: absolute;
+  z-index: 1000;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  padding: 200px 300px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.57);
+}
+@-webkit-keyframes meetup {
+  0%,
+  100% {
+    -webkit-transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+  }
+}
+@keyframes meetup {
+  0%,
+  100% {
+    -webkit-transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+    transform: rotate(calc(var(--rotation) * 1deg)) translateY(300%);
+  }
+}
+.meetup {
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  height: 10px;
+  width: 10px;
+}
+.meetup div {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  -webkit-animation: meetup 1.25s infinite ease;
+  animation: meetup 1.25s infinite ease;
+  background-color: #56483d;
+  border-radius: 100%;
+}
+.meetup div:nth-child(1) {
+  --rotation: 90;
+}
+.meetup div:nth-child(2) {
+  --rotation: 180;
+}
+.meetup div:nth-child(3) {
+  --rotation: 270;
+}
+.meetup div:nth-child(4) {
+  --rotation: 360;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /* CHPT0&&HOME*/
 .chpt0-mention {
-  z-index: 1000;
+  z-index: 10;
   margin: 0px;
   display: flex;
   gap: 5px;
   position: absolute;
   width: auto;
   height: auto;
-  left: 2%;
-  top: 40%;
+  left: 44%;
+  top: 23%;
   border-radius: 4px;
 }
 .chpt0-mention-text p {
@@ -315,14 +397,14 @@ a:focus {
   color: #000000;
 }
 .chpt0-title {
-  z-index: 1000;
+  z-index: 10;
   display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
 }
 chpt0-frame {
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -359,7 +441,7 @@ chpt0-frame {
   align-items: center;
   padding: 37px 76px;
   gap: 19px;
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
   width: 1300px;
   height: auto;
@@ -506,7 +588,7 @@ chpt0-frame {
   height: auto;
 }
 .chpt2-2kuang {
-  z-index: 1000;
+  z-index: 10;
   position: relative;
   margin: 300px auto;
   width: 500px;
@@ -576,8 +658,8 @@ chpt0-frame {
 }
 .kuang-enhance {
   position: sticky;
-  z-index: 1000;
-  top:0;
+  z-index: 10;
+  top: 0;
 }
 /*CHPT3*/
 .chpt3-content {
