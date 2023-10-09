@@ -239,7 +239,7 @@ a:focus {
   padding: 200px 300px;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.57);
+  background: rgba(255, 255, 255, 0.95);
 }
 @-webkit-keyframes meetup {
   0%,

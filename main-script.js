@@ -1,15 +1,32 @@
+/*
 window.onload = function () {
   var meetupbox = document.querySelector(".meetupbox");
   if (meetupbox) {
     meetupbox.style.display = "none";
   }
 };
+*/
+//这里没有使用动态获取时间而是将加载时间写死的一部分原因在于GitHub的连接确实不太稳定……
 
-// let start here!
 $(document).ready(function () {
+  //muter is here!
   $("audio").each(function () {
     this.pause();
   });
+
+  //loadingbox is here!
+  var meetupbox = $(".meetupbox");
+  if (sessionStorage.getItem("verifiedRefresh")) {
+    meetupbox.css("display", "none");
+    setTimeout(function () {
+      meetupbox.css("display", "none");
+    }, 1500);
+  } else {
+    meetupbox.css("display", "none");
+    sessionStorage.setItem("verifiedRefresh", "true");
+  }
+
+  //web starts here!
   var imageIndex = 0;
   var images = [
     "image/chpt0-1.jpg",
@@ -24,6 +41,7 @@ $(document).ready(function () {
   var chats = $(".chpt0-chat");
   var road = $(window).scrollTop();
   $("body").addClass("no-scroll");
+
   //bcgchanger is here!
   setInterval(function () {
     $(".chpt0-container").css(
