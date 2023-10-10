@@ -29,11 +29,11 @@ $(document).ready(function () {
   //web starts here!
   var imageIndex = 0;
   var images = [
-    "image/chpt0-1.jpg",
-    "image/chpt0-2.png",
-    "image/chpt0-3.png",
-    "image/chpt0-4.png",
-    "image/chpt0-5.png",
+    "https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-1.jpg",
+    "https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-2.png",
+    "https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-3.png",
+    "https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-4.png",
+    "https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-5.png",
   ];
   var chat0 = $(".chpt0-chat");
   var pop0 = $(".chpt0-pop");

@@ -338,7 +338,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("image/chpt0-1.jpg");
+  background-image: url("https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/chpt0-1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -779,7 +779,7 @@ chpt0-frame {
 /* FOOTER */
 #footer {
   margin-top: 100px;
-  background-image: url("image/footer.png");
+  background-image: url("https://sys-little-bucket.oss-cn-shanghai.aliyuncs.com/img/footer.png");
   width: auto;
   height: 100%;
   background-size: cover;
